@@ -15,7 +15,5 @@ Leafy Lane is a project that allows users to purchase plants online. The website
 ## Todo
 
 - [ ] Add more plant options
-- [ ] Improve checkout process
-- [ ] Add user account functionality
-- [ ] Implement search functionality
+- [ ] Fix CSS for mobile devices
 - [ ] Deploy the site
