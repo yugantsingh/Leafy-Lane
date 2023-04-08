@@ -32,8 +32,24 @@ export default {
       type: 'number',
     },
     {
+      name: 'onelinedescription',
+      title: 'One Line Description',
+      type: 'string',
+    },
+    {
       name: 'details',
       title: 'Details',
+      type: 'string',
+    },
+    {
+      name: 'benefits',
+      title: 'Benefits',
+      type: 'array',
+      of: [{type: 'string'}],
+    },
+    {
+      name: 'tagline',
+      title: 'tagline',
       type: 'string',
     },
   ],

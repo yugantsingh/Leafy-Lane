@@ -23,6 +23,17 @@ a {
 }
 .layout {
   padding: 10px;
+  background: #e0eafc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navbar-container {
@@ -68,8 +79,13 @@ span.text-red {
   margin-left: 6px;
 }
 .logo {
-  color: gray;
-  font-size: 18px;
+  color: #75ee6a;
+  font-size: 30px;
+  background-color: #111010;
+  font-style: italic;
+  padding: 5px 15px;
+  font-weight: 500;
+  border-radius: 30px;
 }
 .cart-icon {
   font-size: 25px;
@@ -107,7 +123,7 @@ span.text-red {
   cursor: pointer;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
-  color: #324d67;
+  color: #0b0d0f;
 }
 .product-card:hover {
   transform: scale(1.1, 1.1);
@@ -123,19 +139,20 @@ span.text-red {
   font-weight: 500;
 }
 .product-price {
-  font-weight: 800;
+  font-weight: 600;
   margin-top: 6px;
   color: black;
 }
 
 .hero-banner-container {
   padding: 100px 40px;
-  background-color: #dcdcdc;
+  background-color: #95afc0;
   border-radius: 15px;
   position: relative;
-  height: 500px;
+  height: 400px;
   line-height: 0.9;
   width: 100%;
+  text-transform: capitalize;
 }
 .hero-banner-container .beats-solo {
   font-size: 20px;
@@ -159,7 +176,7 @@ span.text-red {
 }
 .hero-banner-container h1 {
   color: white;
-  font-size: 10em;
+  font-size: 8em;
   margin-left: -20px;
   text-transform: uppercase;
 }
@@ -167,8 +184,9 @@ span.text-red {
   position: absolute;
   top: 0%;
   right: 20%;
-  width: 450px;
-  height: 450px;
+  /* width: 450px;
+  height: 450px; */
+  height: 0px;
 }
 
 .desc {
@@ -196,7 +214,8 @@ span.text-red {
 .products-heading {
   text-align: center;
   margin: 40px 0px;
-  color: #324d67;
+  font-weight: 200;
+  color: #131618;
 }
 .products-heading h2 {
   font-size: 40px;
@@ -208,7 +227,19 @@ span.text-red {
 }
 .footer-banner-container {
   padding: 100px 40px;
-  background-color: #f02d34;
+  /* background-color: #f02d34; */
+  background: #d66d75; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e29587,
+    #d66d75
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e29587,
+    #d66d75
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -216,6 +247,7 @@ span.text-red {
   color: white;
   width: 100%;
   margin-top: 120px;
+  text-transform: capitalize;
 }
 .banner-desc {
   display: flex;
@@ -246,6 +278,8 @@ span.text-red {
   left: 8%; */
   top: -25%;
   left: 25%;
+  height: 0px;
+  z-index: -1;
 }
 .banner-desc .right {
   line-height: 1.4;
@@ -274,7 +308,7 @@ span.text-red {
 .cart-container {
   height: 100vh;
   width: 600px;
-  background-color: white;
+  background-color: #e0eafc;
   float: right;
   padding: 40px 10px;
   position: relative;
@@ -389,7 +423,6 @@ span.text-red {
   width: 100%;
   max-width: 400px;
   padding: 10px 12px;
-  border-radius: 15px;
   border: none;
   font-size: 20px;
   margin-top: 10px;
@@ -400,6 +433,7 @@ span.text-red {
   cursor: pointer;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
+  border-radius: 30px;
 }
 .btn:hover {
   transform: scale(1.1, 1.1);
@@ -482,19 +516,22 @@ span.text-red {
 }
 .buttons .add-to-cart {
   padding: 10px 20px;
-  border: 1px solid #f02d34;
+  border: 1px solid #f9ca24;
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
   background-color: white;
-  color: #f02d34;
+  color: #f9ca24;
   cursor: pointer;
   width: 200px;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
+  border-radius: 30px;
 }
 .buttons .add-to-cart:hover {
   transform: scale(1.1, 1.1);
+  background-color: #f9ca24;
+  color: #000;
 }
 .buttons .buy-now {
   width: 200px;
@@ -509,9 +546,12 @@ span.text-red {
   cursor: pointer;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
+  border-radius: 30px;
 }
 .buttons .buy-now:hover {
   transform: scale(1.1, 1.1);
+  background-color: #6ab04c;
+  color: #000;
 }
 .quantity-desc {
   border: 1px solid gray;
@@ -556,7 +596,7 @@ span.text-red {
 }
 .success-wrapper,
 .cancel-wrapper {
-  background-color: white;
+  background-color: #e0eafc;
   min-height: 60vh;
 }
 .success,
@@ -564,7 +604,7 @@ span.text-red {
   width: 1000px;
   margin: auto;
   margin-top: 160px;
-  background-color: #dcdcdc;
+  background-color: #e0eafc;
   padding: 50px;
   border-radius: 15px;
   display: flex;
@@ -607,26 +647,33 @@ span.text-red {
 .product-max-qty {
   margin-top: 10px;
 }
-
+.test-data {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-size: large;
+}
+.test-data ul {
+  font-size: medium;
+}
 @media screen and (max-width: 800px) {
   .hero-banner-container {
-    height: 560px;
+    height: 400px;
   }
   .hero-banner-image {
     width: 77%;
-    height: 62%;
+    height: 0%;
     top: -2%;
     right: -6%;
   }
   .footer-banner-container {
-    height: 560px;
+    height: 500px;
     margin-top: 80px;
   }
   .footer-banner-image {
     width: 77%;
     left: 30%;
     top: 6%;
-    height: 56%;
+    height: 0%;
   }
   .banner-desc .left h3 {
     font-weight: 900;
@@ -673,7 +720,7 @@ span.text-red {
     height: 350px;
   }
   .cart-container {
-    width: 415px;
+    width: 380px;
     padding: 4px;
   }
   .cart-heading {

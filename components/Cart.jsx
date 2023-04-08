@@ -124,6 +124,14 @@ const Cart = () => {
         </div>
         {cartItems.length >= 1 && (
           <div className="cart-bottom">
+            <p className="test-data">
+              You can use the following test credit card for payments:
+              <ul>
+                <li>Card Number: 4242 4242 4242 4242</li>
+                <li>Expiry: 04/24</li>
+                <li>CVV: 242</li>
+              </ul>
+            </p>
             <div className="total">
               <h3>Subtotal:</h3>
               <h3>₹{totalPrice}</h3>

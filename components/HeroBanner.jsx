@@ -14,12 +14,12 @@ const HeroBanner = ({ heroBanner }) => {
           className="hero-banner-image"
         />
         <div>
-          <Link href={`/products/${heroBanner.product}`}>
+          {/* <Link href={`/products/${heroBanner.product}`}>
             <button type="button">{heroBanner.buttonText}</button>
-          </Link>
+          </Link> */}
           <div className="desc">
-            <h5>Desc</h5>
-            <p>{heroBanner.desc}</p>
+            <h5>{heroBanner.discount}</h5>
+            {/* <p>{heroBanner.desc}</p> */}
           </div>
         </div>
       </div>
